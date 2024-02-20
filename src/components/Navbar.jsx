@@ -45,6 +45,12 @@ export default function Navbar() {
                   placeholder="Search product"
                   className="outline-none border-none w-32 h-10 rounded"
                 />
+                <button
+            onClick={() => dispatch(modalFunc(navigate("/")))}
+            className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-indigo-500 hover:text-white"
+          >
+            <MdPostAdd className="mr-2 h-6 w-6 inline" /> Add Product
+          </button>
               <NavLink to={"/favorites"} className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-indigo-500 hover:text-white">
             Favorites ({favorites.length})
           </NavLink>
